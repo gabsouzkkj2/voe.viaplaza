@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ViaPlaza - Linhas Turisticas</title>
+
+  <link rel="shortcut icon" href="./assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@emojione/emojione@4.5.0-1@dist/emojione.min.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body id="top">
+  <header class="header" data-header>
+    <div class="header-top">
+      <div class="container">
+        <a class="logo" style="margin-left: 1rem;">
+          <img src="./assets/images/logolaranja.svg">
+        </a>
+
+        <div class="header-btn-group" style="margin-left: -130rem;">
+          <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="header-bottom">
+      <div class="container">
+        <nav class="navbar" data-navbar>
+          <div class="navbar-top">
+            <a class="logo">
+              <img src="./assets/images/logolaranja.svg">
+            </a>
+
+            <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+          </div>
+
+          <ul class="navbar-list" style="margin-left: 5rem;">
+            <li>
+              <a href="#home" class="navbar-link" data-nav-link>PRINCIPAL</a>
+            </li>
+
+            <li>
+              <a href="#" class="navbar-link" data-nav-link>SOBRE NÓS</a>
+            </li>
+
+            <li>
+              <a href="#destination" class="navbar-link" data-nav-link>DESTINOS</a>
+            </li>
+
+            <li>
+              <a href="#package" class="navbar-link" data-nav-link>PACOTES</a>
+            </li>
+
+            <li>
+              <a href="#gallery" class="navbar-link" data-nav-link>GALERIA</a>
+            </li>
+
+            <li>
+              <a href="#contact" class="navbar-link" data-nav-link>CONTATE NÓS</a>
+            </li>
+          </ul>
+        </nav>
+
+        <a href="https://earth.google.com/web/search">
+          <button class="btn btn-primary" style="background-color: #FF713C; border: 1px solid #FF713C;"><ion-icon name="location" style="color: white; "></ion-icon>GOOGLE
+            EARTH</button>
+        </a>
+        <button class="btn btn-primary"><ion-icon name="exit" style="color: white;"></ion-icon>FAZER LOGIN</button>
+      </div>
+    </div>
+
+  </header>
+  <main>
+    <article>
+      <section class="hero" id="home">
+        <div class="container">
+          <h2 class="h1 hero-title">É HORA DE <span>FAZER</span> AS MALAS</h2>
+          <p class="hero-text" style="font-size: 16px;">
+            Se você faz parte de um público apaixonado por viagens, busca informações confiáveis e úteis para planejar
+            sua próxima jornada, você está no lugar certo. Nós estamos aqui para ajudá-lo a descobrir novos destinos e
+            viver momentos inesquecíveis!
+          </p>
+        </div>
+      </section>
+
+      <section class="tour-search">
+        <div class="container">
+          <form class="tour-search-form" autocomplete="off">
+
+            <div class="input-wrapper">
+              <label for="destination" class="input-label">Origem</label>
+
+              <input type="text" name="destination" id="destination" required placeholder="Digite sua origem"
+                class="input-field">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="destination" class="input-label">Destino</label>
+
+              <input type="text" name="destination" id="destination" required placeholder="Digite seu destino"
+                class="input-field">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="checkin" class="input-label">Data - ida</label>
+
+              <input type="date" name="checkin" id="checkin" required class="input-field">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="checkout" class="input-label">Data - volta</label>
+
+              <input type="date" name="checkout" id="checkout" required class="input-field">
+            </div>
+
+            <button type="submit" class="btn btn-secondary">PESQUISAR</button>
+          </form>
+
+        </div>
+      </section>
+
+      <div id="illustration-left"><img src="assets/images/illustration-left.svg" alt="illustration"></div>
+      <div id="illustration-right"><img src="assets/images/illustration-right.svg" alt="illustration"></div>
+
+      <section class="package" id="package">
+        <div class="container">
+          <p class="section-subtitle" style="color: orange">PACOTES POPULARES</p>
+          <h2 class="h2 section-title">CHEQUE NOSSOS PACOTES</h2>
+
+          <p class="section-text">
+            Se você está procurando uma maneira de melhorar seus pacotes de viagem turísticas e se destacar no mercado,
+            é hora de considerar o uso dos meus serviços como modelo de linguagem avançado. Com minha habilidade de
+            gerar conteúdo eficaz e eficiente, eu posso criar descrições detalhadas de locais turísticos, hotéis,
+            restaurantes e muito mais!
+          </p>
+          <ul class="package-list">
+
+            <li>
+              <div class="package-card">
+                <figure class="card-banner">
+                  <img src="./assets/images/pacotesalvador.svg" loading="lazy">
+                </figure>
+                <div class="card-content">
+                  <h3 class="h3 card-title">Tríplice Maravilha Brasileira</h3>
+                  <p class="card-text">
+                    O pacote Tríplice Maravilha Brasileira é uma experiência única de viagem para os amantes de turismo
+                    no Brasil. Com uma duração de 7 dias, este pacote inclui tudo o que você precisa para aproveitar ao
+                    máximo as maravilhas das cidades de Salvador, Rio de Janeiro e Foz do Iguaçu! Além de conhecer as
+                    maravilhas naturais e culturais das cidades de Salvador, Rio de Janeiro e Foz do Iguaçu. Além do
+                    mais, nesse pacote é incluso uma experiência única para os amantes do Carnaval brasileiro!
+                  </p>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="time"></ion-icon>
+
+                        <p class="text">21h</p>
+                      </div>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="people"></ion-icon>
+
+                        <p class="text">Pessoas: 138</p>
+                      </div>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="location" style="color: orange"></ion-icon>
+
+                        <p class="text">Salvador, Rio de Janeiro e Foz do Iguacu</p>
+                      </div>
+                    </li>
+                  </ul>
+
+                </div>
+                <div class="card-price">
+                  <div class="wrapper">
+                    <p class="reviews">(850 avaliações)</p>
+                    <div class="card-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+                  </div>
+
+                  <p class="price">
+                    $4.236
+                    <span>/ Por pessoa</span>
+                  </p>
+
+                  <button class="btn btn-secondary">COMPRE AGORA</button>
+                  <button class="btn btn-secondary" id="google-earth-btn" style="margin-top: 1rem;">GOOGLE
+                    EARTH</button>
+
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="package-card" id="riodejaneiro">
+                <figure class="card-banner">
+                  <img src="./assets/images/pacoteriodejaneiro.svg" loading="lazy">
+                </figure>
+                <div class="card-content">
+                  <h3 class="h3 card-title">Rota dos Tesouros do Brasil</h3>
+                  <p class="card-text">
+                    O pacote Rota dos Tesouros do Brasil é uma jornada de 10 dias para explorar as riquezas mais
+                    espetaculares e escondidas do Brasil. Com tudo incluso, desde hospedagem em hotéis de qualidade até
+                    transporte confortável e alimentação deliciosa, os viajantes podem se concentrar em aproveitar o
+                    melhor de cada destino sem preocupações!
+                  </p>
+
+                  <ul class="card-meta-list">
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="time"></ion-icon>
+                        <p class="text">19h</p>
+                      </div>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="people"></ion-icon>
+                        <p class="text">Pessoas: 138</p>
+                      </div>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <div class="meta-box">
+                        <ion-icon name="location" style="color: orange"></ion-icon>
+                        <p class="text">Pará, Rio Grande do Sul e Pernambuco</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="card-price">
+                  <div class="wrapper">
+                    <p class="reviews">(450 Avaliações)</p>
+                    <div class="card-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+                  </div>
+
+                  <p class="price" style="text-decoration: line-through">
+                    $3.169
+                    <span>/ Por pessoa</span>
+                  </p>
+
+                  <button class="btn btn-secondary"
+                    style="background-color: white; color: #0084B8; cursor: not-allowed">ESGOTADO</button>
+                  <button class="btn btn-secondary"
+                    style="margin-top: 1rem; background-color: white; color: #0084B8; cursor: not-allowed">GOOGLE
+                    EARTH</button>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <li>
+            <div class="package-card" id="maceió">
+              <figure class="card-banner">
+                <img src="./assets/images/pacotemaceio.svg" alt="Santorini Island's Weekend Vacation" loading="lazy">
+              </figure>
+              <div class="card-content">
+                <h3 class="h3 card-title">Três Tesouros do Brasil</h3>
+                <p class="card-text">
+                  O pacote "Três Tesouros do Brasil" é uma jornada de 7 dias para descobrir algumas das joias mais
+                  preciosas do Brasil. Com tudo incluso, desde hospedagem em hotéis de qualidade até transporte
+                  confortável e alimentação deliciosa, os turistas podem desfrutar da melhor experiência de viagem sem
+                  preocupações!
+                </p>
+
+                <ul class="card-meta-list">
+                  <li class="card-meta-item">
+                    <div class="meta-box">
+                      <ion-icon name="time"></ion-icon>
+                      <p class="text">18h</p>
+                    </div>
+                  </li>
+
+                  <li class="card-meta-item">
+                    <div class="meta-box">
+                      <ion-icon name="people"></ion-icon>
+                      <p class="text">Pessoas: 138</p>
+                    </div>
+                  </li>
+
+                  <li class="card-meta-item">
+                    <div class="meta-box">
+                      <ion-icon name="location" style="color: orange"></ion-icon>
+                      <p class="text" style="margin-left: 10px;">Mato Grosso, Santa Catarina <span
+                          style="margin-left: 1rem;"> e Rio Grande do Norte</span></p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="card-price">
+                <div class="wrapper">
+                  <p class="reviews">(375 Avaliações)</p>
+                  <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+                </div>
+
+                <p class="price" style="text-decoration: line-through">
+                  $5.169
+                  <span>/ Por pessoa</span>
+                </p>
+
+                <button class="btn btn-secondary"
+                  style="background-color: white; color: #0084B8; cursor: not-allowed">ESGOTADO</button>
+                <button class="btn btn-secondary"
+                  style="margin-top: 1rem; background-color: white; color: #0084B8; cursor: not-allowed">GOOGLE
+                  EARTH</button>
+              </div>
+            </div>
+          </li>
+          </ul><br><br><br>
+          <button class="btn btn-primary">VEJA TODOS OS PACOTES</button>
+        </div>
+      </section>
+
+      <section class="gallery" id="gallery">
+        <div class="container">
+          <p class="section-subtitle" style="color: orange">FOTO DA GALERA</p>
+          <h2 class="h2 section-title">FOTOS DE VIAJANTES</h2>
+          <p class="section-text">
+            Compartilhe suas experiências de viagem e registrar momentos únicos ao redor do mundo. Grupo de entusiastas
+            de viagens, o pessoal reúne uma comunidade de viajantes de todos os cantos do planeta que compartilham suas
+            histórias, fotos e dicas sobre destinos fascinantes. E aí? Está esperando o que pra compartilhar?
+          </p>
+
+          <ul class="gallery-list">
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="./assets/images/galeria1.svg" alt="Gallery image">
+              </figure>
+            </li>
+
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="./assets/images/galeria2.svg" alt="Gallery image">
+              </figure>
+            </li>
+
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="./assets/images/galeria3.svg" alt="Gallery image">
+              </figure>
+            </li>
+
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="./assets/images/galeria4.svg" alt="Gallery image">
+              </figure>
+            </li>
+
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="./assets/images/galeria5.svg" alt="Gallery image">
+              </figure>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="cta" id="contact">
+        <div class="container">
+          <div class="cta-content">
+            <p class="section-subtitle">Conte Conosco!</p>
+            <h2 class="h2 section-title">Pronto para viagens inesquecíveis? Lembre-se de nós!</h2>
+            <p class="section-text">
+              Pronto para viagens inesquecíveis? Lembre-se de nós! Com a Viaplaza, você pode desfrutar de viagens
+              incríveis com a garantia de qualidade em todos os serviços oferecidos. Desde o planejamento até o retorno,
+              cuidamos de cada detalhe para que você possa relaxar e aproveitar ao máximo!
+            </p>
+          </div>
+
+          <button class="btn btn-secondary" style="font-size: 23px;">Contate nós</button>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-brand">
+          <a class="logo">
+            <img src="./assets/images/logolaranja.svg">
+          </a>
+
+          <p class="footer-text">
+            A ViaPlaza é uma empresa de turismo que se dedica a proporcionar experiências únicas e inesquecíveis aos
+            seus clientes. Com uma equipe de profissionais experientes e apaixonados por viagens.
+          </p>
+        </div>
+
+        <div class="footer-contact">
+          <h4 class="contact-title">Contate nós</h4>
+          <p class="contact-text">
+            Sinta-se à vontade para entrar em contato e chegar até nós!
+          </p>
+
+          <ul>
+            <li class="contact-item">
+              <ion-icon name="call-outline"></ion-icon>
+
+              <a href="tel:+01123456790" class="contact-link">+55 (14) 4002-8922</a>
+            </li>
+            <li class="contact-item">
+              <ion-icon name="mail-outline"></ion-icon>
+
+              <a href="mailto:info.tourly.com" class="contact-link">viaplaza@gmail.com</a>
+            </li>
+            <li class="contact-item">
+              <ion-icon name="location-outline"></ion-icon>
+
+              <address>São Paulo, SP - Via Plaza House</address>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-form">
+          <p class="form-text">
+            Inscreva-se para mais atualizações ou novidades!
+          </p>
+
+          <form autocomplete="off" class="form-wrapper">
+            <input type="email" name="email" style="outline: 0;" class="input-field" placeholder="Informe seu email"
+              required>
+
+            <button type="submit" class="btn btn-secondary">Inscreva-se</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p class="copyright">
+          &copy; 2023 <a href="">voeviaplaza - </a> Linhas Turisticas
+        </p>
+        <ul class="footer-bottom-list">
+          <li>
+            <a href="#" class="footer-bottom-link">Privacidade Política</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-bottom-link">Termo e condição</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-bottom-link">Perguntas frequentes</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <a href="#top" class="go-top" data-go-top>
+    <ion-icon name="chevron-up-outline"></ion-icon>
+  </a>
+</body>
+<script src="./assets/js/script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</html>
